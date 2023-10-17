@@ -22,15 +22,15 @@ pip install Flask pandas
 자료1. https://www.youtube.com/watch?v=snCP3c7wXw0&ab_channel=Codemify
 자료2. https://www.youtube.com/watch?v=lelVripbt2M&ab_channel=%EC%BD%94%EB%94%A9%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94%EB%88%84%EB%82%98
 
-[] 로컬PC에 본인 계정 설정 안되어 있으면 zip 파일로
+[O] 로컬PC에 본인 계정 설정 안되어 있으면 zip 파일로
 [] .gitignore 설명
-[] Tip. 변수명 짓기 사이트
+[] Tip. 변수명 짓기 사이트 : https://www.curioustore.com/#!/
 
 1. 파이썬 가상환경
 
-[] 개발 프로젝트 관리
-[] 파이썬 가상환경
-[] 생성한 가상환경을 Jupyter에서 사용하기 (커널)
+[O] 개발 프로젝트 관리
+[O] 파이썬 가상환경
+[O] 생성한 가상환경을 Jupyter에서 사용하기 (커널)
 
 2. Flask 사용하기
 
