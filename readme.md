@@ -24,6 +24,7 @@ pip install Flask pandas
 
 [] 로컬PC에 본인 계정 설정 안되어 있으면 zip 파일로
 [] .gitignore 설명
+[] Tip. 변수명 짓기 사이트
 
 1. 파이썬 가상환경
 
