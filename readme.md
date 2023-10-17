@@ -19,6 +19,8 @@ pip install Flask pandas
 
 ```
 0. git clone 하기
+자료1. https://www.youtube.com/watch?v=snCP3c7wXw0&ab_channel=Codemify
+자료2. https://www.youtube.com/watch?v=lelVripbt2M&ab_channel=%EC%BD%94%EB%94%A9%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94%EB%88%84%EB%82%98
 
 [] 로컬PC에 본인 계정 설정 안되어 있으면 zip 파일로
 [] .gitignore 설명
