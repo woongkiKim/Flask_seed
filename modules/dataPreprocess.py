@@ -26,7 +26,7 @@ class DataCleansing:
                         'Title_Other', 'Pclass_1', 'Pclass_2', 'Pclass_3']
         
         # 학습데이터 Ticket 가중치
-        self.ticket_weight = pd.read_csv('./data/titanic/ticket_weight.csv')
+        self.ticket_weight = pd.read_csv('./data/ticket_weight.csv')
         self.ticket_weight = self.ticket_weight.set_index('Ticket')['Weight'].to_dict()
 
         # 학습데이터 Age 정규화 통계치
@@ -118,7 +118,7 @@ class DataCleansing:
 
         result_df = Jack_Rose_test_df[self.columns_to_add]
 
-        result_df.to_csv('./data/titanic/test_dfs.csv', index=False)
+        result_df.to_csv('./data/test_dfs.csv', index=False)
 
         print("⭐️ 전처리 후 데이터셋입니다.", result_df)
 

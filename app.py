@@ -1,11 +1,14 @@
 from flask import Flask, request, render_template
 import pandas as pd
+import joblib
 
 from modules.dataPreprocess import DataCleansing
 
 app = Flask(__name__)
 
 cleansing = DataCleansing()
+
+model = joblib.load('best_rf_model.pkl')
 
 
 @app.route("/")
@@ -29,7 +32,7 @@ def predict():
 
             print("\n ============= ⭐️ 입력 데이터:\n ", df, "\n =============")
 
-            cleansing.preprocess(df)
+            dfs = cleansing.preprocess(df)
 
             return render_template("index.html", df=df)
 

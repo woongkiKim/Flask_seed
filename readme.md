@@ -37,10 +37,10 @@ pip install Flask pandas
 [O] Web 기초 : index.html, styles.css
 [O] 생성한 ML모델 추출하기
 [O] /predict으로 데이터 입력받기
-[] ⭐️ 파이썬 클래스 사용법
-[] PEP 파이썬 코드 컨벤션 : https://www.theteams.kr/teams/371/post/64212
-[] 전처리 모듈 만들기 (with Class)
-[] 전처리 모듈 사용하기 (Class와 Method)
-[] 예측 모델 사용하기
+[O] ⭐️ 파이썬 클래스 사용법
+[O] PEP 파이썬 코드 컨벤션 : https://www.theteams.kr/teams/371/post/64212
+[O] 전처리 모듈 만들기 (with Class)
+[O] 전처리 모듈 사용하기 (Class와 Method)
+[O] 예측 모델 사용하기
 
 ```
