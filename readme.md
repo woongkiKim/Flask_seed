@@ -24,7 +24,7 @@ pip install Flask pandas
 
 [O] 로컬PC에 본인 계정 설정 안되어 있으면 zip 파일로
 [] .gitignore 설명
-[] Tip. 변수명 짓기 사이트 : https://www.curioustore.com/#!/
+[O] Tip. 변수명 짓기 사이트 : https://www.curioustore.com/#!/
 
 1. 파이썬 가상환경
 
@@ -34,8 +34,8 @@ pip install Flask pandas
 
 2. Flask 사용하기
 
-[] Web 기초 : index.html, styles.css
-[] 생성한 ML모델 추출하기
+[O] Web 기초 : index.html, styles.css
+[O] 생성한 ML모델 추출하기
 [] /predict으로 데이터 입력받기
 [] ⭐️ 파이썬 클래스 사용법
 [] PEP 파이썬 코드 컨벤션 : https://www.theteams.kr/teams/371/post/64212
