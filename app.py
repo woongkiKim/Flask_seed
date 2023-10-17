@@ -1,11 +1,11 @@
 from flask import Flask, request, render_template
 import pandas as pd
 
-# from modules.dataPreprocess import DataCleansing
+from modules.dataPreprocess import DataCleansing
 
 app = Flask(__name__)
 
-# cleansing = DataCleansing()
+cleansing = DataCleansing()
 
 
 @app.route("/")
@@ -28,6 +28,8 @@ def predict():
             df = pd.DataFrame(data, index=[0])
 
             print("\n ============= ⭐️ 입력 데이터:\n ", df, "\n =============")
+
+            cleansing.preprocess(df)
 
             return render_template("index.html", df=df)
 
