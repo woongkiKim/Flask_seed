@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 import pandas as pd
 import joblib
+import numpy as np
 
 from modules.dataPreprocess import DataCleansing
 
@@ -34,11 +35,21 @@ def predict():
 
             dfs = cleansing.preprocess(df)
 
-            return render_template("index.html", df=df)
+            # 입력 데이터 처리 및 모델 예측
+            prediction = model.predict(dfs)  ## ✅ 모델 사용
+            pred_proba = np.round(model.predict_proba(dfs), 2)
 
+            # 예측 결과를 HTML 템플릿에 전달
+            pred_result = prediction
+            print("⭐️ 예측 결과입니다.", pred_result, pred_proba)
+            
+            return render_template("index.html", df=df, prediction=pred_result, pred_proba=pred_proba)
+        
         else:
             print("⭐️ 잘못된 접근입니다.")
-            return render_template("index.html", df=df)
+            return render_template("index.html", df=None, prediction=None, pred_proba=None)
+    except Exception as e:
+        return render_template("index.html", prediction=f"오류: {str(e)}")
 
     except Exception as e:
         return render_template("index.html")
