@@ -51,9 +51,6 @@ def predict():
     except Exception as e:
         return render_template("index.html", prediction=f"오류: {str(e)}")
 
-    except Exception as e:
-        return render_template("index.html")
-
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
